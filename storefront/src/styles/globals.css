@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600&family=Montserrat:wght@300;400;500&display=swap');
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+/* --- HIGH-END EDITORIAL MILLINERY --- */
+@layer base {
+  body {
+    /* Pristine Alabaster background and Obsidian text */
+    background-color: #FCFAFA;
+    color: #0A0A0A;
+    /* Spacious, modern sans-serif for body text */
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Dramatic, high-fashion serif for all headings */
+  h1, h2, h3, .text-3xl-semi, .text-3xl-regular, .text-2xl-semi, .text-2xl-regular {
+    font-family: 'Bodoni Moda', serif;
+    letter-spacing: -0.01em;
+  }
+}
 
 @layer utilities {
   /* Chrome, Safari and Opera */
@@ -35,9 +54,11 @@
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    border: 1px solid #212121;
-    -webkit-text-fill-color: #212121;
-    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    /* Sharp Obsidian */
+    border: 1px solid #0A0A0A;
+    -webkit-text-fill-color: #0A0A0A;
+    /* Alabaster Background */
+    -webkit-box-shadow: 0 0 0px 1000px #FCFAFA inset;
     transition: background-color 5000s ease-in-out 0s;
   }
 
@@ -55,19 +76,20 @@
   }
 
   .contrast-btn {
-    @apply px-4 py-2 border border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200 ease-in;
+    /* Changed to sharp corners (rounded-none) for a designer look */
+    @apply px-6 py-3 border border-[#0A0A0A] rounded-none hover:bg-[#0A0A0A] hover:text-[#FCFAFA] transition-all duration-300 ease-in-out uppercase tracking-widest text-xs font-semibold;
   }
 
   .text-xsmall-regular {
-    @apply text-[10px] leading-4 font-normal;
+    @apply text-[10px] leading-4 font-normal tracking-wide;
   }
 
   .text-small-regular {
-    @apply text-xs leading-5 font-normal;
+    @apply text-xs leading-5 font-normal tracking-wide;
   }
 
   .text-small-semi {
-    @apply text-xs leading-5 font-semibold;
+    @apply text-xs leading-5 font-semibold tracking-wide;
   }
 
   .text-base-regular {

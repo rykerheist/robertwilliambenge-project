@@ -1,0 +1,61 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.medusa/
+.cache/
+.swc/
+
+# Uploads / database dumps
+uploads/
+medusa-db.sql
+dump.rdb
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# OS
+.DS_Store
+*.pem
+
+# IDEs
+.idea/
+.vscode/
+
+# Vercel
+.vercel
+
+# Yarn (Berry)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Test artefacts
+coverage/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
